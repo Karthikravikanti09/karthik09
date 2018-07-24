@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	10
+	<script type="text/javascript">
+		var num = 20;
+		console.log(num);
+		// num = 'ravi';
+		if(false){
+			console.log('go to movie');
+		}else{
+			console.log('hangout in cafe');
+		}
+		var mainCourseMenu = ['jeera rice','pulka','biryani','naan','roti'];
+		var curryMenu = ['tomato', 'brinjal', 'potato']
+		var mainCourseItem; var curryItem
+		function goToParadise(mainItem,curry){
+			for(i = 0 ; i < mainCourseMenu.length; i = i + 1){
+				if(mainCourseMenu[i] == mainItem){
+							mainCourseItem = mainItem;
+					}else{
+							mainCourseItem = 'not available'
+					}
+			}
+			if(mainCourseItem !== 'not available'){
+				console.log(mainCourseItem + 'is available');
+			}else{
+				console.log(mainCourseItem );
+			}
+		for(j = 0 ; j < curryMenu.length; j = j + 1){
+						if(curryMenu[j] == curry){
+							curryItem = curry;
+					}else{
+							curryItem = 'not available'
+					}
+			}
+			if(curryItem !== 'not available'){
+				console.log(curryItem + 'is available');
+			}else{
+				console.log(curryItem );
+			}}
+		
+		goToParadise('roti','potato');
+	</script>
+</body>
+</html>
